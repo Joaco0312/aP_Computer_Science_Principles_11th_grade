@@ -1,0 +1,82 @@
+'''#Fuction is a block of code which only runs when it's called. You can pass data known as parameter, into a function. A function an get data asa result
+#Creating a function
+# In python a function is greating using the def keyword
+def my_function():
+  print("Hello from a function")
+my_function()
+  #Calling a Function
+#Use thge function name follow by the parenthesis
+my_function()
+# 
+def my_function(fname):
+  print(fname + " Joaquin")
+my_function(" Pizza")
+#parameters amd Arguments
+# The terms paramenter abnd arguiment can ve use for the dame thibg:
+#A parametyer is a variable listed inside the parethesis in th function defiition
+# An argument is the value that is sent tpo a function when it is called
+def guacarea(rana, cuajo):
+  print (rana+ " de " + cuajo)
+guacarea ("RANA", "CUAJO")
+#Python Class
+#To create a class, use keyword class
+#Create a class name MyClass, with a property named x:
+class My_Class:
+  x=5
+
+#Create an Object
+#Now we can use the class name My_Class to create an object
+#Create an object named g1 , and print the value of x:
+p1=My_Class()
+print(p1.x)
+#The_int_()Function to assing values for name and age:
+
+#Create a class named person use the _init_() function to assing values for name and age
+class Person:
+  def _init_(self,name,age):
+    self.name = name
+    self.age = age
+  p1 = Person ("John", 36)
+  print (p1.age)
+  print (p1.name)
+  '''
+  #Note The _init_() function is called automacally every time the class is being use to crate a new object
+#Pyton inheritance
+#Inheritance allows us to define a class that inherit all the methods and properties from another class
+#The Parent Class is the class been inherited from, also called base class
+#Child class is: the class that inherits from another class, also called derived class
+#Any class can be PArent, so syntax is the same as creating another class
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+x = Person("John", "Doe")
+x.printname()
+
+class Powers:
+  def __init__ (source, power, hability):
+    source.power = power
+    source.hability = hability
+  def search(source):
+    print (source.power, source.hability)
+  
+x = Powers ("Fire", "fireball")
+x.search()
+#Child Class
+#To create a class that inherites the functionality from another class send the parent class as a parameter when creating the child class
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
+
+class Student(Powers):
+  pass
+
+x = Student("Water", "healing")
+x.search()
