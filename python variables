@@ -1,0 +1,10 @@
+x,y,z = "Joaquin ", "Vargas ", "Cano "
+print (x+z+y)
+# Can be print in the same line if it's added.
+u = str(5)
+print (u)
+
+
+c,b = "stars","hine"
+mytxt = c+b
+print (mytxt)
